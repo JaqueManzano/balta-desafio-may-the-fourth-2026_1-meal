@@ -4,9 +4,9 @@ var client = OllamaClientFactory.Create();
 
 var culinaryAgent = new CulinaryAgent(client);
 
-Console.WriteLine("Tell me: what ingredients do you have on hand, and how much time can you spend preparing it?"); 
+Console.WriteLine("Me conta: quais ingredientes você tem aí e quanto tempo você pode dedicar ao preparo?"); 
 var input = Console.ReadLine() ?? "";
 
 
 await culinaryAgent.Handle(input);
-Console.WriteLine("Enjoy your meal!");
+Console.WriteLine("Bom apetite!");
